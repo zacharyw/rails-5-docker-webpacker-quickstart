@@ -1,5 +1,9 @@
 # Rails 5 Quick Start with Docker and Webpacker
 
+This project contains all you need to start developing web apps with Rails 5 using [Webpack](https://webpack.js.org/) to manage your CSS and javascript assets, via the [webpacker](https://github.com/rails/webpacker) gem.
+
+We'll use docker to run our code, webpack server, and database, so this development environment can be used in any OS environment. If you mess up or something goes wrong, feel free to delete your containers and try again - that's what they're there for.
+
 ## Prerequisites
 
 * [Git](https://git-scm.com/downloads)
