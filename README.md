@@ -80,7 +80,7 @@ Flag explanations:
 * **--skip-test** - We're going to install Rspec, so we don't need the unit test framework that comes with rails.
 * **--webpack** - Tells Rails to go ahead and install webpack.
 
-If everyone went well you should have a directory full of Rails boilerplate.
+If everything went well you should have a directory full of Rails boilerplate.
 
 ### Re-build web image
 
