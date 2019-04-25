@@ -20,7 +20,7 @@ You should name your directory whatever you want your Rails app to be named.
 
 * **Dockerfile** - Defines the dependencies of the container that our Rails app will run
 in. We start with a base image, `FROM`, that includes Ruby, Node, and Yarn.
-* **docker-compose.yml** - Defines the services make up our application. To get
+* **docker-compose.yml** - Defines the services that make up our application. To get
 started all we need is a database, a web server where Rails will run, and a 
 webpack server that will serve and hot reload our assets. The postgres db is created
 using a pre-made image, while the webpack and web services are built using our
