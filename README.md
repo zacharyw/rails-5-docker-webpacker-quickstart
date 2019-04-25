@@ -40,7 +40,7 @@ docker volume create --name=pgdata
 Docker containers are ephemeral. You can destroy and recreate them as often as you
 want. This volume will allow our DB data to survive such purges.
 
-This is another way to do this: instead of creating a Docker volume, you can
+There is another way to do this: instead of creating a Docker volume, you can
 use the `volumes` attribute under the `db` service, and mount a local
 directory (./tmp/db):
 
@@ -75,7 +75,7 @@ Flag explanations:
 * **--no-deps** - Tells `docker-compose run` not to start any of the services in `depends_on`.
 * **--force** - Tells rails to overwrite existing files, such as Gemfile.
 * **--database=postgresql** - Tells Rails to default our db config to use postgres.
-* **--skip-sprockets** - Since we're using webpacker we don't need sprocks or the asset pipeline.
+* **--skip-sprockets** - Since we're using webpacker we don't need sprockets or the asset pipeline.
 * **--skip-coffee** - We're going to be writing ES6 JS, so we don't need coffeescript.
 * **--skip-test** - We're going to install Rspec, so we don't need the unit test framework that comes with rails.
 * **--webpack** - Tells Rails to go ahead and install webpack.
