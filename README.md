@@ -117,6 +117,25 @@ default: &default
 This uses the default username and password (which is empty) for the postgres image. It also changes `host` to point
 to `db`, the name of our service.
 
+### Configure Webpacker
+
+Similar to the database, we need to point our webpacker config at our running webpack service. In `webpacker.yml`, change
+```
+host: 0.0.0.0
+```
+and
+```
+public: 0.0.0.0:3035
+```
+to
+```
+host: webpack
+```
+and
+```
+public: webpack:3035
+```
+
 ### Start the application
 
 Run
